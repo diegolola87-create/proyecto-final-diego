@@ -88,21 +88,4 @@ main {
   color: #dee2e6;
 }
 
-.hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("../img/hero.jpg");
-  background-size: cover;
-  background-position: center;
-  min-height: 45vh;
-  display: flex;
-  align-items: center;
-  padding: 4rem 1rem;
-  border-radius: 1rem;
-  margin: 1.5rem 0;
-}
-
-.hero h1,
-.hero p {
-  color: #fff;
-}
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=stle.css.map */

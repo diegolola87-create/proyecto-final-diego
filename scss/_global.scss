@@ -1,3 +1,4 @@
+@use "variables" as *;
 body {font-family: arial, sans-serif;
     background-color: #f8f9fa;
     line-height: 1.6;
@@ -92,3 +93,173 @@ section {
             font-size: 16px;
             color: $color-principal;
         }
+
+        .hero {
+            background: linear-gradient(135deg,#0f172a, #111827);
+            color: #e5e7eb;
+
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+
+            padding: 5rem 1rem;
+            margin: 2rem 0;
+            border-radius: 1rem;
+            }
+
+            .hero h1,
+            .hero p {
+                color: #fff;
+                }
+
+                .hero{
+                    padding-top: 120px; // espacio para el header sticky
+                }
+
+                body{
+                    background: #0b0f1a;
+                    color: rgba(255,255,255,.9);
+                }
+
+                .section{
+                    max-width: 1100px;
+                    margin: 0 auto;
+                    padding: 80px 18px
+                }
+
+                .panel{
+                    margin-bottom: 40px;
+                }
+
+                .list-group-item{
+                    background: #f9fafb;
+                    color: #333;
+                    border-color: rgba(0,0,0,0.08); 
+                }
+
+                main {
+                    background: #f3f4f6;
+                }
+
+                .panel {
+                    background: #ffffff;
+                    border-radius: 12px;
+                    padding: 24px;
+                    padding: 24px;
+                    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+                    border: 1px solid rgba(0,0,0,0.08);
+                }
+
+                .card,
+                .list-group {
+                    border-radius: 12px;
+                    overflow: hidden;
+                }
+
+                .card {
+                    background: #ffffff;
+                    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+                    border: 1px solid rgba(0,0,0,.06)
+                }
+
+                .list-group-item {
+                    background: transparent;
+                    border-color: rgba(0,0,0,0.08);
+                    color: #333;
+                }
+
+                
+
+                @keyframes fadeUp {
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+
+                /* Animacion suave de entrada */
+                .panel {
+                    animation: fadeUp 0.6s ease forwards;
+                    transition: transform 0.3s ease,
+                    box-shadow 0.3s ease;
+
+                    }
+
+                    .panel {
+                        opacity: 0 ;
+                        transform: translateY(20px);
+
+                        animation: fadeUp 0.6s ease forwards;
+                        animation-delay: 015s;
+
+                        transition: transform 0.3s ease,
+                        box-shadow 0.3s ease;
+                }
+
+                /* Hover elegante */
+                .panel:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+                }
+
+                .topbar__nav a {
+                    color: #333;
+                    text-decoration: none;
+                    padding: 0.5rem 0.75rem;
+                    transition: color 0.25s ease,
+                    transform 0.25s ease;
+                }
+
+                .topbar__nav a:hover {
+                    color: #0d6efd;
+                    transform: translateY(-2px);
+                }
+
+                .btn {
+                    transition: background-color 0.25s
+                    ease, transform 0.25s ease;
+                }
+
+                .btn:hover {
+                    transform: translateY(-2px);
+                }
+
+                .panel:hover {
+                    transform: translateY(-4px);
+                    box-shadow: 0 12px 30px 
+                    rgba(0,0,0,0.12);
+                }
+
+                .hero{
+                    position: relative;
+                    background-image: url("../img/hero.jpg");
+                    background-size: cover;
+                    background-position: center;
+
+                }
+
+                /* overlay para mejorar contraste */ 
+                .hero::before {
+                    content: "";
+                    position: absolute;
+                    inset: 0;
+                    background: rgba(0,0,0,.45);
+                }
+
+                .hero > * {
+                    position: relative;
+                    z-index: 1;
+                }
+
+                .btn {
+                    transition: all 0.25s ease;
+                }
+
+                .btn:hover {
+                    transform: translateY(-2px);
+                    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+                    }
+
+                    .top__nav a:hover {
+                        text-decoration: underline;
+                        }
